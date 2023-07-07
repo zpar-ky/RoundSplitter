@@ -14,6 +14,9 @@ env:
   MOD_HELPER_NAME: Btd6ModHelper
   BLOONSTD6: ./BloonsTD6
 
+permissions:
+  contents: write
+
 jobs:
   build:
     
