@@ -43,7 +43,8 @@ split
 {
     string path = "round.txt";
     string text = File.ReadAllText(path);
-
+	int round = 1;
+	
 	if (text == "win")
 	{
 		return true;
@@ -51,8 +52,9 @@ split
 	
 	try
 	{
-		int round = Int32.Parse(text);
-	} catch {} // if its not an int it'll error and idc
+		round = Int32.Parse(text);
+	} 
+	catch {} // if its not an int it'll error and idc
 	
 	// MODIFY THIS if you want to have custom splits
 	//   e.g. 'round%5' will split every 5 rounds
